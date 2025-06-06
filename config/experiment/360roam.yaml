@@ -1,0 +1,55 @@
+# @package _global_
+# 이건 yin끼리 만든 3dgs와 yang끼리 만든 3dgs를 합치고 다시 렌더한 것
+
+defaults:
+  - override /dataset: omni
+  - override /model/encoder: crosscostvolume
+  - override /loss: [mse, lpips]
+
+mode: test
+
+wandb:
+  name: 360Roam
+  tags: [360Roam]
+
+data_loader:
+  train:
+    batch_size: 14
+
+trainer:
+  max_steps: 300_001
+
+# ----- Additional params for default best model customization
+model:
+  encoder:
+    num_depth_candidates: 128
+    costvolume_unet_feat_dim: 128
+    costvolume_unet_channel_mult: [1,1,1]
+    costvolume_unet_attn_res: [4]
+    gaussians_per_pixel: 1
+    depth_unet_feat_dim: 32
+    depth_unet_attn_res: [16]
+    depth_unet_channel_mult: [1,1,1,1,1]
+
+# lpips loss
+loss:
+  lpips:
+    apply_after_step: 0
+    weight: 0.05
+
+dataset: 
+  image_shape: [512, 1024, 256, 768, 768, 256] # omni, yin, yang order
+  roots: [datasets/360Roam_total_256]
+  near: 1.
+  far: 100.
+  baseline_scale_bounds: false
+  make_baseline_1: false
+  max_fov: 180.
+  view_sampler:
+    index_path: assets/evaluation_index_360roam.json
+
+test:
+  target_omnidirectional: yinyang
+  eval_time_skip_steps: 5
+  compute_scores: true
+  export_ply: false

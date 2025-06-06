@@ -1,0 +1,12 @@
+{
+"seq0":       {"context": [25, 28],     "target": [26,27]},
+"seq1":       {"context": [164, 167],   "target": [165,166]},
+"seq2":       {"context": [72, 75],     "target": [73,74]},
+"seq3":       {"context": [25, 28],     "target": [26,27]},
+"seq4":       {"context": [41, 44],     "target": [42,43]},
+"seq5":       {"context": [14, 17],     "target": [15,16]},
+"seq6":       {"context": [12, 15],     "target": [13,14]},
+"seq7":       {"context": [221, 224],   "target": [222,223]},
+"seq8":       {"context": [42, 45],     "target": [43,44]},
+"seq9":       {"context": [134, 137],   "target": [135,136]}
+}

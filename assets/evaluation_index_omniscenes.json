@@ -1,0 +1,9 @@
+{
+"turtlebot_pyebaekRoom_1_scene_1":      {"context": [96, 99],   "target": [97,98]},
+"turtlebot_room_1_scene_1_new":         {"context": [5, 8],     "target": [6,7]},
+"turtlebot_room_2_scene_1":             {"context": [10, 13],   "target": [11,12]},
+"turtlebot_room_3_scene_1":             {"context": [90, 93],   "target": [91,92]},
+"turtlebot_room_4_scene_1":             {"context": [18, 21],   "target": [19,20]},
+"turtlebot_room_5_scene_1":             {"context": [68, 71],   "target": [69,70]},
+"turtlebot_weddingHall_1_scene_1":      {"context": [11, 14],   "target": [12,13]}
+}

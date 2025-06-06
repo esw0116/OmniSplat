@@ -1,0 +1,13 @@
+{
+"bar":              {"context": [6, 10],   "target":  [7,8,9]},
+"base":             {"context": [21, 25],   "target": [22,23,24]},
+"cafe":             {"context": [41, 45],   "target": [42,43,44]},
+"canteen":          {"context": [74, 78],   "target": [75,76,77]},
+"center":           {"context": [52, 56],   "target": [53,54,55]},
+"center1":          {"context": [36, 40],   "target": [37,38,39]},
+"corridor":         {"context": [10, 14],   "target": [11,12,13]},
+"innovation":       {"context": [32, 36],   "target": [33,34,35]},
+"lab":              {"context": [62, 66],   "target": [63,64,65]},
+"library":          {"context": [5, 9],     "target": [7,8,9]},
+"office":           {"context": [80, 84],   "target": [81,82,83]}
+}
